@@ -27,9 +27,17 @@
     li a{
         color: lightgreen;
     }
+    a{
+        color:cyan;
+    }
+    button a{
+        color: black;
+        text-decoration: none;
+        text-align: center;
+    }
 </style>
 <body>
-    <header>
+    <header id="inicio">
         <h1 style="background-color: darkblue;">Blog de formação do curso <b style="color:darkorange">HTML</b> da DIO.me</h1>
         <hr>
         <fieldset style="background-color: rgb(50, 50, 50); border-color:mediumaquamarine; border-radius: 0px">
@@ -38,8 +46,8 @@
                 <ul>
                     <li><a href="#main">Introdução</a></li>
                     <li><a href="#texto">Tegs de texto</a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+                    <li><a href="#inputs">Tegs de input</a></li>
+                    <li><a href="#formulários">formulários</a></li>
                     <li><a href=""></a></li>
                     <li><a href=""></a></li>
                     <li><a href=""></a></li>
@@ -53,6 +61,9 @@
     </header>
     <main id="main">
         <h2>Introdução</h2>
+        <div style="text-align: center; margin: 10px">
+            <button><a href="#inicio">Voltar</a></button>
+        </div>
         <fieldset>
             <p>
                 Este é um blog de formação do curso da HTML da DIO.me, onde você encontrará seções com o conteúdo das aulas feitas no curso, sobre Estruturação, semântica e as principais tags do HTML. Durante o percurso, veremos como criar textos com títulos, parágrafos, destaques; como criar listas, links, imagens, tabelas, formulários, além de aprender um pouco sobre formatação via <b style="color: blue;">CSS</b>, tags estrurais, semântica e até acessibilidade.
@@ -69,6 +80,9 @@
     <article>
         <section id="texto">
             <h2>Tags de texto</h2>
+            <div style="text-align: center; margin: 10px">
+                <button><a href="#inicio">Voltar</a></button>
+            </div>
             <fieldset>
                 <p>
                     As tegs de texto são as mais básicas do HTML, usadas para estruturar o conteúdo textual de uma página. As principais tegs são:
@@ -90,14 +104,17 @@
                         <b>mark</b> - usada para destacar um texto importante ou relevante, geralmente exibido com um <mark>fundo amarelo</mark> ou outra cor de destaque.
                     </li>
                     <li>
-                        <b>u</b> - usada para <u>sublinhar</u> um texto importante. É geralmente usada para enfatizar uma palavra ou frase específica.
+                        
                     </li>
                 </ul>
             </fieldset>
             <hr>
         </section>
-        <section>
+        <section id="inputs">
             <h2>Inputs</h2>
+            <div style="text-align: center; margin: 10px">
+                <button><a href="#inicio">Voltar</a></button>
+            </div>
             <fieldset>
                 <p>
                     Inputs são elementos de formulário que permitem ao usuário inserir dados em uma página Web. Eles são usados para coletar informações do usuário, como nome, e-mail, senha e outros dados. Existem vários tipos de inputs disponíveis no HTML, cada um com uma finalidade específica. Alguns dos tipos mais comuns incluem:
@@ -115,6 +132,10 @@
                     <li>
                         <b>password</b> - usado para inserir senhas. Ele oculta o texto digitado, exibindo apenas pontos ou asteriscos para proteger a privacidade do usuário.
                     </li>
+                </ul>
+                <h3>Exemplo de formulário.</h3>
+                <img src="formulário.png" alt="exemplo de formulário" width="300">
+                <ul>
                     <li>
                         <b>search</b> - usado para inserir termos de pesquisa em um campo de busca. Ele geralmente exibe um ícone de lupa ao lado do campo.
                     </li>
@@ -140,6 +161,32 @@
             </fieldset>
             <hr>
         </section>
+        <section id="formulários">
+            <h2>Formulários</h2>
+            <div style="text-align: center; margin: 10px">
+                <button><a href="#inicio">Voltar</a></button>
+            </div>
+            <fieldset>
+                <p>
+                    Formulários são elementos HTML que permitem ao usuário enviar dados para o servidor. São usados para coletar informações do usuário usando as tegs de <a href="#inputs">input</a>.
+                </p>
+                <p>
+                    Um formulário é definido pela teg <b>form</b>, que pode conter vários inputs e outros elementos, como botões de envio. O formulário pode ser enviado para o servidor usando o método <b>GET</b> ou <b>POST</b>, dependendo da finalidade do formulário.
+                </p>
+                <p>
+                    As tegs usadas para criar formulários incluem:<br>
+                    <ul>
+                        <li>
+                           <b>form</b> - define o início e o fim do formulário. Pode ter atributos como <b>action</b> (URL para onde os dados serão enviados) e <b>method</b> (método de envio como GET ou POST).
+                        </li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </p>
+            </fieldset>
+        </section>    
     </article>
 </body>
 </html>
