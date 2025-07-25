@@ -35,6 +35,20 @@
         text-decoration: none;
         text-align: center;
     }
+    .form-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .form-row label {
+        width: 100px;
+        margin-right: 10px;
+        text-align: right;
+    }
+    .form-row input {
+        flex: 1;
+        padding: 4px;
+    }
 </style>
 <body>
     <header id="inicio">
@@ -179,10 +193,39 @@
                         <li>
                            <b>form</b> - define o início e o fim do formulário. Pode ter atributos como <b>action</b> (URL para onde os dados serão enviados) e <b>method</b> (método de envio como GET ou POST).
                         </li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>
+                            <b>input</b> - usado para criar campos de entrada de dados, como texto, número, e-mail, senha, etc. Cada input pode ter atributos como <b>type</b> (tipo de input), <b>name</b> (nome do campo) e <b>value</b> (valor padrão).
+                        </li>
+                        <li>
+                            <b>label</b> - usado para associar um rótulo a um campo de entrada. Ele melhora a acessibilidade e a usabilidade do formulário, permitindo que o usuário saiba o que deve ser inserido em cada campo.
+                        </li>
+                        <li>
+                            <b>button</b> - usado para criar botões dentro do formulário. Pode ser usado para enviar o formulário ou executar outars ações. O atributo <b>type</b> pode ser definido como <b>submit</b> (para enviar o formulário ao servidor) ou <b>reset</b> (para limpar os campos do formulário.)
+                        </li>
+                    </ul>
+                    <h3>Exemplo</h3>
+                    <form class="form-row">
+                        <fieldset style="background-color: white; color: black; border-radius: 10px; border-color:blue">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" required><br><br>
+
+                            <label for="numero">Números:</label>
+                            <input type="number" id="numero" name="numero" min="1" max="100"><br><br>
+
+                            <label for="data">Data:</label>
+                            <input type="date" id="data" name="data"><br><br>
+                        </fieldset>
+                    </form>
+                    <ul>
+                        <li>
+                            <b>select</b> - usado para criar listas suspensas. Ele permite que o usuário escolha uma opção de uma lista de opções. As opções são definidas dentro da teg <b>option</b>.
+                        </li>
+                        <li>
+                            <b>textarea</b> - usado para criar áreas de texto maiores, onde o usuário pode inserir texto longo. Ela permite que o usuário digite várias linhas de texto e pode ter atributos como <b>rows</b> (número de linhas visíveis).
+                        </li>
+                        <li>
+
+                        </li>
                     </ul>
                 </p>
             </fieldset>
