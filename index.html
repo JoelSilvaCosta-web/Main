@@ -62,7 +62,7 @@
                     <li><a href="#texto">Tegs de texto</a></li>
                     <li><a href="#inputs">Tegs de input</a></li>
                     <li><a href="#formulários">formulários</a></li>
-                    <li><a href=""></a></li>
+                    <li><a href="#listas">Tags de lista</a></li>
                     <li><a href=""></a></li>
                     <li><a href=""></a></li>
                     <li><a href=""></a></li>
@@ -118,9 +118,18 @@
                         <b>mark</b> - usada para destacar um texto importante ou relevante, geralmente exibido com um <mark>fundo amarelo</mark> ou outra cor de destaque.
                     </li>
                     <li>
-                        
+                        <b>i</b> - <i>usada para definir texto em itálico. É geralmente usada para enfatizar palavras ou frases.</i>
                     </li>
-                </ul>
+                    <li>
+                        <b>u</b> - usada para definir <u>texto sublinhado.</u> É geralmente usada para destacar palavras ou frases de forma visual.
+                    </li>
+                    <li>
+                        <b>br</b> - usada para inserir quebras de linha dentro de um parágrafo ou texto sem criar um novo parágrafo. Ela não possui uma teg de fechamento.
+                    </li>
+                    <li>
+                        <b>hr</b> - usada para inserir uma linha horizontal que separa visualmente seções de conteúdo. Ela também não possui teg de fechamento.
+                    </li>
+                </ul>            
             </fieldset>
             <hr>
         </section>
@@ -204,16 +213,23 @@
                         </li>
                     </ul>
                     <h3>Exemplo</h3>
-                    <form class="form-row">
+                    <form>
                         <fieldset style="background-color: white; color: black; border-radius: 10px; border-color:blue">
-                            <label for="nome">Nome:</label>
-                            <input type="text" id="nome" name="nome" required><br><br>
+                            <div class="form-row">
+                                <label for="nome">Nome:</label>
+                                <input type="text" id="nome" name="nome" required><br><br>
+                            </div>
 
-                            <label for="numero">Números:</label>
-                            <input type="number" id="numero" name="numero" min="1" max="100"><br><br>
+                            <div class="form-row">
+                                <label for="numero">Números:</label>
+                                <input type="number" id="numero" name="numero" min="1" max="100"><br><br>
+                            </div>
 
-                            <label for="data">Data:</label>
-                            <input type="date" id="data" name="data"><br><br>
+                            <div class="form-row">
+                                <label for="data">Data:</label>
+                                <input type="date" id="data" name="data"><br><br>
+                            </div>
+                            <button type="reset">Limpar</button>
                         </fieldset>
                     </form>
                     <ul>
@@ -224,9 +240,24 @@
                             <b>textarea</b> - usado para criar áreas de texto maiores, onde o usuário pode inserir texto longo. Ela permite que o usuário digite várias linhas de texto e pode ter atributos como <b>rows</b> (número de linhas visíveis).
                         </li>
                         <li>
-
+                            <b>fieldset</b> - usado para agrupar elementos relacionados dentro de um formulário. Ele pede ser usado para organizar visualmente o formulário e melhorar a usabilidade.
+                        </li>
+                        <li>
+                            <b>legend</b> - usado para fornecer um título ou descrição para um grupo de elementos dentro de um <b>fieldset</b>. Melhora a acessibilidade e a compreensão do formulário.
                         </li>
                     </ul>
+                </p>
+            </fieldset>
+        </section>
+        <hr>
+        <section id="listas">
+            <h2>Listas</h2>
+            <div style="text-align: center; margin: 10px;">
+                <button><a href="#inicio">Voltar</a></button>
+            </div>
+            <fieldset>
+                <p>
+                    As listas são usadas para agrupar itens relacionados em uma página Web. Elas podem ser ordenadas ou não ordenadas e são definidas por tegs específicas. As principais tegs de lista são:
                 </p>
             </fieldset>
         </section>    
