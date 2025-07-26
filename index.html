@@ -197,10 +197,10 @@
                     Um formulário é definido pela tag <b>form</b>, que pode conter vários inputs e outros elementos, como botões de envio. O formulário pode ser enviado para o servidor usando o método <b>GET</b> ou <b>POST</b>, dependendo da finalidade do formulário.
                 </p>
                 <p>
-                    As tags usadas para criar formulários incluem:<br>
+                    As tags usadas para criar formulários incluem:
                     <ul>
                         <li>
-                           <b>form</b> - define o início e o fim do formulário. Pode ter atributos como <b>action</b> (URL para onde os dados serão enviados) e <b>method</b> (método de envio como GET ou POST).
+                            <b>form</b> - define o início e o fim do formulário. Pode ter atributos como <b>action</b> (URL para onde os dados serão enviados) e <b>method</b> (método de envio como GET ou POST).
                         </li>
                         <li>
                             <b>input</b> - usado para criar campos de entrada de dados, como texto, número, e-mail, senha, etc. Cada input pode ter atributos como <b>type</b> (tipo de input), <b>name</b> (nome do campo) e <b>value</b> (valor padrão).
@@ -212,41 +212,41 @@
                             <b>button</b> - usado para criar botões dentro do formulário. Pode ser usado para enviar o formulário ou executar outras ações. O atributo <b>type</b> pode ser definido como <b>submit</b> (para enviar o formulário ao servidor) ou <b>reset</b> (para limpar os campos do formulário.)
                         </li>
                     </ul>
-                    <h3>Exemplo</h3>
-                    <form>
-                        <fieldset style="background-color: white; color: black; border-radius: 10px; border-color:blue">
-                            <div class="form-row">
-                                <label for="nome">Nome:</label>
-                                <input type="text" id="nome" name="nome" required><br><br>
-                            </div>
-
-                            <div class="form-row">
-                                <label for="numero">Números:</label>
-                                <input type="number" id="numero" name="numero" min="1" max="100"><br><br>
-                            </div>
-
-                            <div class="form-row">
-                                <label for="data">Data:</label>
-                                <input type="date" id="data" name="data"><br><br>
-                            </div>
-                            <button type="reset">Limpar</button>
-                        </fieldset>
-                    </form>
-                    <ul>
-                        <li>
-                            <b>select</b> - usado para criar listas suspensas. Ele permite que o usuário escolha uma opção de uma lista de opções. As opções são definidas dentro da tag <b>option</b>.
-                        </li>
-                        <li>
-                            <b>textarea</b> - usado para criar áreas de texto maiores, onde o usuário pode inserir texto longo. Ela permite que o usuário digite várias linhas de texto e pode ter atributos como <b>rows</b> (número de linhas visíveis).
-                        </li>
-                        <li>
-                            <b>fieldset</b> - usado para agrupar elementos relacionados dentro de um formulário. Ele pede ser usado para organizar visualmente o formulário e melhorar a usabilidade.
-                        </li>
-                        <li>
-                            <b>legend</b> - usado para fornecer um título ou descrição para um grupo de elementos dentro de um <b>fieldset</b>. Melhora a acessibilidade e a compreensão do formulário.
-                        </li>
-                    </ul>
                 </p>
+                <h3>Exemplo</h3>
+                <form>
+                    <fieldset style="background-color: white; color: black; border-radius: 10px; border-color:blue">
+                        <div class="form-row">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" required><br><br>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="numero">Números:</label>
+                            <input type="number" id="numero" name="numero" min="1" max="100"><br><br>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="data">Data:</label>
+                            <input type="date" id="data" name="data"><br><br>
+                        </div>
+                        <button type="reset">Limpar</button>
+                    </fieldset>
+                </form>
+                <ul>
+                    <li>
+                        <b>select</b> - usado para criar listas suspensas. Ele permite que o usuário escolha uma opção de uma lista de opções. As opções são definidas dentro da tag <b>option</b>.
+                    </li>
+                    <li>
+                        <b>textarea</b> - usado para criar áreas de texto maiores, onde o usuário pode inserir texto longo. Ela permite que o usuário digite várias linhas de texto e pode ter atributos como <b>rows</b> (número de linhas visíveis).
+                    </li>
+                    <li>
+                        <b>fieldset</b> - usado para agrupar elementos relacionados dentro de um formulário. Ele pede ser usado para organizar visualmente o formulário e melhorar a usabilidade.
+                    </li>
+                    <li>
+                        <b>legend</b> - usado para fornecer um título ou descrição para um grupo de elementos dentro de um <b>fieldset</b>. Melhora a acessibilidade e a compreensão do formulário.
+                    </li>
+                </ul>
             </fieldset>
         </section>
         <hr>
@@ -258,8 +258,6 @@
             <fieldset>
                 <p>
                     As listas são usadas para agrupar itens relacionados em uma página Web. Elas podem ser ordenadas ou não ordenadas e são definidas por tags específicas. As principais tags de lista são:
-                </p>
-                <p>
                     <ul>
                         <li>
                             <b>ul</b> - usada para criar listas não ordenadas. As listas não ordenadas são, geralmente, exibidas com marcadores (bolinhas) antes de cada item da lista.
@@ -297,17 +295,77 @@
             <fieldset>
                 <p>
                     As tabelas são usadas para organizar dados em linhas e colunas, facilitando a visualização e comparação de informações. Elas são definidas por tags específicas e podem conter cabeçalhos, células de dados e rodapés. As principais tags de tabelas são:
-                </p>
-                <p>
                     <ul>
                         <li>
                             <b>table</b> - usada para definir o início e o fim de uma tabela. Contém todas as outras tags de tabela.
                         </li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                        <li>
+                            <b>tr</b> - usada para definir uma linha de tabela. Cada linha pode conter várias células de dados.
+                        </li>
+                        <li>
+                            <b>th</b> - usada para definir células de cabeçalhos de tabela. Geralmente, são exibidas em negrito e centralizadas, sendo usadas para descrever o conteúdo de uma coluna ou linha.
+                        </li>
+                        <li>
+                            <b>td</b> - usada oara definir células de dados de tabela. Elas armazenam as informações reais da tabela, podendo conter texto, números, imagens ou outros elementos HTML.
+                        </li>
+                    </u>
                 </p>
+                <h3>Exemplo</h3>
+                <table border="1" style="border-collapse: collapse; border-color: black; width: 100%; color: black;">
+                    <thead style="background-color: gray">
+                        <tr>
+                            <th>Nome</th>
+                            <th>Idade</th>                          
+                            <th>Cidade</th>
+                        </tr>
+                    </thead>
+                    <tbody style="text-align: center; background-color: white;">
+                        <tr>
+                            <td>Lucas</td>
+                            <td>15</td>
+                            <td>São Luís</td>
+                        </tr>
+                        <tr>
+                            <td>Mateus</td>
+                            <td>21</td>
+                            <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                            <td>Ana</td>
+                            <td>32</td>
+                            <td>Fortaleza</td>
+                        </tr>
+                    </tbody>
+                    <tfoot style="background-color: gray;">
+                        <tr>
+                            <td colspan="3" style="text-align: center;">Total de pessoas: 3</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </fieldset>
+            <hr>
+        </section>
+        <section id="embed-iframe">
+            <h2>Embed e Iframe</h2>
+            <div style="text-align: center; margin: 10px">
+                <button><a href="#inicio">Voltar</a></button>
+            </div>
+            <fieldset>
+                <p>
+                    As tags <b>embed</b> e <b>iframe</b> são usadas para incorporar conteúdo externo em uma página Web, como vídeos, mapas, documentos e outros recursos. Elas permitem que você exiba conteúdo de outras fontes sem precisar redirecionar o usuário para outra página.
+                </p>
+                <ul>
+                    <li>
+                        <b>embed</b> - usada para incorporar conteúdo multimídia, como vídeos, áudio ou animações. Ela pode ter atributos como <b>src</b> (URL do recurso) e <b>type</b> (tipo MIME do recurso).
+                    </li>
+                    <li>
+                        <b>iframe</b> - usada para incorporar uma página Web inteira dentro de outra página. Ela permite que você exiba conteúdo de outras páginas sem sair da página atual. Pode ter atributos como <b>src</b> (URL da página a ser incorporada), <b>width</b> (largura do iframe) e <b>height</b> (altura do iframe).
+                    </li>
+                </ul>
+                <h3>Exemplo (embed)</h3>
+                <embed src="https://youtu.be/AodpzDqfC9Q?si=zMvtXvyQ0sxUrWnN" width="300" type="video/mp4">
+                <h3>Exemplo (iframe)</h3>
+                <iframe src="https://dio.me" width="90%" height="500"></iframe>
             </fieldset>
         </section>    
     </article>
